@@ -18,7 +18,7 @@ class MultisensorSeries(SeriesHelper):
     class Meta:
         client = db
         series_name = 'multisensor'
-        fields = ['temperature', 'humidity']
+        fields = ['temperature', 'humidity', 'motion']
         tags = ['name']
 
 
