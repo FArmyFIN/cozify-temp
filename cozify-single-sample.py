@@ -8,7 +8,7 @@ import pytz, time
 # Get all temperature and humidity capable data
 # This version is only compatible with python-cozify >= v0.2.11 since it relies on the new capabilities features
 def main():
-    sensors = hub.devices(capabilities=[hub.capability.TEMPERATURE, hub.capability.HUMIDITY])
+    sensors = hub.devices(capabilities=[hub.capability.TEMPERATURE, hub.capability.HUMIDITY, hub.capability.MOTION])
     tz=pytz.timezone(hub.tz())
     try:
         storage.storeMultisensor(util.homogenize(sensors), tz=tz)
