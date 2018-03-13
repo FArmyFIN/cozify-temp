@@ -29,7 +29,7 @@ def _initState(config_file):
             'port': 8086,
             'user': '',
             'password': '',
-            'db': 'cozify'
+            'db': 'cozify_test'
         }
     })
 
